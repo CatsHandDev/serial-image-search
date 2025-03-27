@@ -46,7 +46,7 @@ export const App = () => {
   return (
     <div className="container">
       <div className="header">
-        <h1>商品コード画像検索</h1>
+        <h1>タキロン図面サーチ</h1>
         <div className="searchWrapper">
           <input
             className="input"
