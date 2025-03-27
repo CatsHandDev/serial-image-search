@@ -53,7 +53,7 @@ export const App = () => {
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="6桁の数字を入力"
+            placeholder="6桁のタキロンコードを入力"
             onKeyDown={(e) => {
               if (e.key === 'Enter') {
                 handleSearch();
@@ -63,8 +63,8 @@ export const App = () => {
           <button className="button" onClick={handleSearch}>Search</button>
         </div>
       </div>
-
       <div className="imageContainer">
+      <p>タキロン製品の図面を商品コードから素早く検索できる便利ツール。設計や施工の効率をアップ！</p>
         {error &&
           <div className="error">
             <p>
