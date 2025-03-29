@@ -72,6 +72,7 @@ body {
 }
 
 .search-button {
+  min-width: 58px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,5 +152,14 @@ body {
 @media (max-width: 767px) {
   .pc {
     display: none;
+  }
+
+  .search-button {
+    min-width: 60px;
+    padding: 0;
+  }
+
+  .search-input {
+    padding: 0 0 0 16px;
   }
 }
