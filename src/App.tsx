@@ -59,7 +59,7 @@ export const App = () => {
                 />
                 <button className="search-button" onClick={handleSearch}>
                   <Search size={18} />
-                  <span>検索</span>
+                  <span className="pc">検索</span>
                 </button>
               </div>
             </div>

@@ -41,13 +41,6 @@ body {
   gap: 16px;
 }
 
-@media (min-width: 768px) {
-  .header-content {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
 .header-title h1 {
   font-size: 1.8rem;
   color: #0066cc;
@@ -84,6 +77,7 @@ body {
   justify-content: center;
   gap: 6px;
   background-color: #0066cc;
+  border-radius: 999px;
   color: white;
   border: none;
   padding: 0 20px;
@@ -147,3 +141,15 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+@media (min-width: 768px) {
+  .header-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 767px) {
+  .pc {
+    display: none;
+  }
+}
