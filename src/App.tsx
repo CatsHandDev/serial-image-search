@@ -50,7 +50,7 @@ export const App = () => {
                   type="text"
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
-                  placeholder="6桁のタキロンコードを入力"
+                  placeholder="6桁の製品コードを入力"
                   onKeyDown={(e) => {
                     if (e.key === "Enter") {
                       handleSearch()
