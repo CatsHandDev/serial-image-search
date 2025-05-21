@@ -1,0 +1,279 @@
+/* src/firebase-components.css */
+
+/* Auth関連のスタイル */
+.auth-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #0066cc;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #444;
+}
+
+.form-group input {
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.error-message {
+  color: #cc0000;
+  background-color: #fff0f0;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border-left: 3px solid #cc0000;
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.success-message {
+  color: #006600;
+  background-color: #f0fff0;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border-left: 3px solid #006600;
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.auth-button, .upload-button {
+  height: 44px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.auth-button:hover, .upload-button:hover {
+  background-color: #0055aa;
+}
+
+.auth-button:disabled, .upload-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.auth-toggle {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #0066cc;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.toggle-button:hover {
+  text-decoration: underline;
+}
+
+.logout-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+/* アップローダー関連のスタイル */
+.uploader-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.uploader-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #0066cc;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* モーダル関連のスタイル */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header h3 {
+  margin: 0;
+  color: #0066cc;
+}
+
+.modal-close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+/* ヘッダーに追加するAuth関連ボタン */
+.admin-button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.admin-button:hover {
+  background-color: #0055aa;
+}
+
+.admin-button-container {
+  display: flex;
+  align-items: center;
+}
+
+/* ユーザーメニュー */
+.user-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.user-menu-button {
+  min-width: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #fff;
+  border: 1px solid #0066cc;
+  color: #0066cc;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.user-menu-button:hover {
+  background-color: #0066cc;
+  color: #fff;
+}
+
+.user-menu-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  min-width: 190px;
+  z-index: 100;
+
+  opacity: 0;
+  transform: translateY(-10px) scale(0.98);
+  pointer-events: none;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.user-menu-dropdown.open {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+
+.user-menu-item {
+  padding: 12px 16px;
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.user-menu-item:hover {
+  background-color: #f5f5f5;
+}
+
+.user-menu-divider {
+  height: 1px;
+  background-color: #eee;
+  margin: 8px 0;
+}
