@@ -184,12 +184,12 @@ export const App = () => {
               )}
             </div>
           </div>
-          <div className="header-description">
+          {/* <div className="header-description">
             <p>タキロン製品の図面を商品コードから素早く検索できる便利ツール。設計や施工の効率をアップ！</p>
             <p className="disclaimer">
               ※全ての商品を網羅しているわけではございません。検証が不十分ですので参考程度にお使いください。
             </p>
-          </div>
+          </div> */}
         </div>
       </header>
 
